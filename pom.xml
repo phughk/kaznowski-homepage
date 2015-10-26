@@ -14,33 +14,33 @@
 		<scala.version.tools>2.11</scala.version.tools>
 	</properties>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>net.alchim31.maven</groupId>
-				<artifactId>scala-maven-plugin</artifactId>
-				<version>3.2.0</version>
-				<executions>
-					<execution>
-						<!-- this is so we don't end with a compile error in maven-compiler-plugin -->					
-						<phase>process-sources</phase> 					
-						<goals>
-							<goal>compile</goal>
-							<goal>testCompile</goal>
-						</goals>
-						<configuration>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
-				</configuration>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <!-- this is so we don't end with a compile error in maven-compiler-plugin -->					
+                        <phase>process-sources</phase> 					
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                        <configuration>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -74,8 +74,8 @@
                     </archive>
                 </configuration>
             </plugin>
-		</plugins>
-	</build>
+        </plugins>
+    </build>
 	<dependencies>
 		<dependency>
 			<groupId>org.scala-lang</groupId>
