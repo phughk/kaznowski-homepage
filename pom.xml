@@ -11,7 +11,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.7</java.version>
 		<scala.version>2.11.2</scala.version>
-		<scala.version.tools>2.11</scala.version.tools>
+        <scala.version.tools>2.11</scala.version.tools>
+        <jettyVersion>9.3.5.v20151012</jettyVersion>
 	</properties>
 
     <build>
@@ -76,8 +77,13 @@
             </plugin>
         </plugins>
     </build>
-	<dependencies>
-		<dependency>
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>${jettyVersion}</version>
+        </dependency>
+        <dependency>
 			<groupId>org.scala-lang</groupId>
 			<artifactId>scala-library</artifactId>
 			<version>${scala.version}</version>
