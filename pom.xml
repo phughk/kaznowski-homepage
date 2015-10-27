@@ -61,7 +61,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.kaznowski.hugh.homepage.Application</mainClass>
+                            <mainClass>com.kaznowski.hugh.homepage.ScalaClass</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -82,7 +82,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.kaznowski.hugh.homepage.Application</mainClass>
+                            <mainClass>com.kaznowski.hugh.homepage.ScalaClass</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

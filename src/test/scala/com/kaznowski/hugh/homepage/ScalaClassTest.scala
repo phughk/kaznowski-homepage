@@ -12,10 +12,10 @@ import org.scalatest.junit.JUnitRunner
  * Created by Hugh on 26/10/2015.
  */
 @RunWith(classOf[JUnitRunner])
-class ApplicationTest extends FunSuite with Matchers{
+class ScalaClassTest extends FunSuite with Matchers{
 
   test("Application is instance of jetty Server") {
-    Application.isInstanceOf[Server] should be(true)
+    ScalaClass.isInstanceOf[Server] should be(true)
   }
 /*
   def isServerTest = {
