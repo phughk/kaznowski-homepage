@@ -25,6 +25,7 @@
                 <configuration>
                     <includes>
                         <include>**/*Test.*</include>
+                        <include>**/Suite.*</include>
                     </includes>
                 </configuration>
             </plugin>
