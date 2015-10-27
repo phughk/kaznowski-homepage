@@ -8,7 +8,7 @@ import org.scalatest._
  * Created by Hugh on 26/10/2015.
  */
 class SimpleScalacheckTest extends FlatSpec {
-  "A Application" should "extend jetty Server" in {
-    assert(Application.isInstanceOf[Server])
+  "A test" should "fail" in {
+    assert(false == true)
   }
 }
