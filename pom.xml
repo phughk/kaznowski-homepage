@@ -17,6 +17,9 @@
 
     <build>
         <plugins>
+            <!-- 
+            How to fix scalatest to work with junit     
+            https://github.com/s4nk/scalatest-maven-template/blob/master/pom.xml -->
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>
