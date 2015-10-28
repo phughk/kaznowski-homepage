@@ -17,8 +17,6 @@ public class ApplicationTest {
         application = new Application();
     }
 
-    @Test
-    public void testApplicationInstanceOfServer() {
-        Assert.assertTrue("The application class should be an instance of jetty server", application instanceof Server);
-    }
+
+
 }
