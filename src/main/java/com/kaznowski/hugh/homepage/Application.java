@@ -17,6 +17,7 @@ public class Application {
      */
     public Application(ServerWrapperInterface server) {
         this.server = server;
+        server.setHandler(getHandler());
     }
 
     /**
@@ -25,7 +26,6 @@ public class Application {
      */
     public static void main(String[] args) {
         Application app = new Application(new ServerWrapperWrapperImplementation(80));
-        app.server.setHandler(app.getHandler());
     }
 
     /**
