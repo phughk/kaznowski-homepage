@@ -8,6 +8,7 @@ import java.util.function.BiConsumer;
 
 /**
  * Created by hugh on 28/10/15.
+ * @deprecated this was used for embedded implementation
  */
 public class ServerWrapperFixture {
     private Handler handler;
