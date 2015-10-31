@@ -14,12 +14,12 @@ import org.scalatest.junit.JUnitRunner
 @RunWith(classOf[JUnitRunner])
 class ScalaClassTest extends FunSuite with Matchers{
 
-  test("Application is instance of jetty Server") {
+  test("MyServlet is instance of jetty Server") {
     ScalaClass.isInstanceOf[Server] should be(true)
   }
 /*
   def isServerTest = {
-    assertTrue("Application should be an instance of Jetty Server", Application.isInstanceOf[Server])
+    assertTrue("MyServlet should be an instance of Jetty Server", MyServlet.isInstanceOf[Server])
   }
 */
 }
