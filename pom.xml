@@ -116,11 +116,13 @@
             <artifactId>jetty-server</artifactId>
             <version>${jettyVersion}</version>
         </dependency>
+<!--
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-maven-plugin</artifactId>
             <version>${jettyVersion}</version>
         </dependency>
+-->
         <dependency>
             <groupId>org.scala-lang</groupId>
             <artifactId>scala-library</artifactId>
