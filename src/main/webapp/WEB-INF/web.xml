@@ -9,9 +9,13 @@
         <servlet-class>
             com.kaznowski.hugh.homepage.MyServlet
         </servlet-class>
+        <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>homepage</servlet-name>
-        <url-pattern>/homepage</url-pattern>
+        <url-pattern>/homepage**</url-pattern>
     </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>homepage</welcome-file>
+    </welcome-file-list>
 </web-app>
