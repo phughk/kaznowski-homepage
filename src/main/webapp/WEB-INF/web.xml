@@ -13,7 +13,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>homepage</servlet-name>
-        <url-pattern>/homepage**</url-pattern>
+        <url-pattern>/homepage/*</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>homepage</welcome-file>
