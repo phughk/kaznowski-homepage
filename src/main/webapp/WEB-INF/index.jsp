@@ -1,7 +1,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <body>
-This is index.jsp
-<c:if test="${not empty message}">The message is ${message}</c:if>
+<p>This is index.jsp</p>
+<c:out value="${'taglibs c:out'}"/><br>
+<c:if test="${msg!=null}">
+    <p>
+        The message is <b><c:out value="${msg}"/></b>
+    </p>
+</c:if>
 </body>
 </html>

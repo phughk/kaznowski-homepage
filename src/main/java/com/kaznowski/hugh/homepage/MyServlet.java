@@ -22,7 +22,7 @@ public class MyServlet extends HttpServlet {
         ServletOutputStream os = resp.getOutputStream();
         os.println("Test 1 2 3");
 */
-        req.setAttribute("message", "this is the message");
+        req.setAttribute("msg", "this is the message");
         req.getRequestDispatcher("/WEB-INF/index.jsp").forward(req, resp);
 //        resp.setStatus(200);
     }
