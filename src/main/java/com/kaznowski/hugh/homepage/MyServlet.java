@@ -1,5 +1,9 @@
 package com.kaznowski.hugh.homepage;
 
+import com.kaznowski.hugh.homepage.models.HomepageResponse;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServlet;
@@ -18,12 +22,11 @@ public class MyServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         logger.info("Received get request");
-/*
-        ServletOutputStream os = resp.getOutputStream();
-        os.println("Test 1 2 3");
-*/
+        ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+        HomepageResponse hResp = (HomepageResponse) context.getBean("response");
+        logger.info("Homepage response message: " + hResp.getMsg());
+
         req.setAttribute("msg", "this is the message");
-        req.getRequestDispatcher("/WEB-INF/ind      ex.jsp").forward(req, resp);
-//        resp.setStatus(200);
+        req.getRequestDispatcher("/WEB-INF/index.jsp").forward(req, resp);
     }
 }
