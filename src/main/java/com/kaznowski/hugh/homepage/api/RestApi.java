@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 @Path("/api")
 public class RestApi {
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
     public String ping() {
         return "{\"key\": \"Works\"}";
     }
