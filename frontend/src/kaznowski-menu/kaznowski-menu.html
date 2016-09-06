@@ -1,26 +1,31 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
-<link rel="import" href="../kaznowski-menu/kaznowski-menu.html">
+<link rel="import" href="../polymer/polymer.html">
 
-<dom-module id="frontend-app">
+<!--
+`kaznowski-menu`
+Scroll header with menu
+
+@demo demo/index.html 
+-->
+
+<dom-module id="kaznowski-menu">
   <template>
     <style>
       :host {
         display: block;
       }
     </style>
-		<kaznowski-menu></kaznowski-menu>
     <h2>Hello [[prop1]]</h2>
   </template>
 
   <script>
     Polymer({
 
-      is: 'frontend-app',
+      is: 'kaznowski-menu',
 
       properties: {
         prop1: {
           type: String,
-          value: 'frontend-app',
+          value: 'kaznowski-menu',
         },
       },
 
