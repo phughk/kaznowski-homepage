@@ -1,0 +1,7 @@
+{
+  "name": "kaznowski-frontend",
+  "short_name": "kaznowski-frontend",
+  "description": "Polymer frontend app",
+  "start_url": "/",
+  "display": "standalone"
+}
